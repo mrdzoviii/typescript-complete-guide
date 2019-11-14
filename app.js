@@ -1,2 +1,4 @@
 "use strict";
-console.log('It works!');
+//String
+var myName = 'Jovan';
+myName = '5';

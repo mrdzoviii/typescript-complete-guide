@@ -1,1 +1,3 @@
-console.log('It works!');
+//String
+let myName = 'Jovan';
+//myName = 5;
