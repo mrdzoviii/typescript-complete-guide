@@ -15,3 +15,26 @@ let hasHobbies = true;
 let myRealAge: number;
 myRealAge = 5;
 //myRealAge='27'
+
+//array
+let hobbies = ['Cooking', 'Sports'];
+console.log(hobbies[0]);
+
+let tupples: [string, number] = ['Maglajani', 95];
+
+enum Color {
+    Gray,
+    Green,
+    Blue,
+}
+
+//enum
+let myColor: Color = Color.Green;
+console.log(myColor);
+
+//any
+
+let car: any = 'BMW';
+console.log(car);
+car = { brand: 'BMW', series: 3 };
+console.log(car);
