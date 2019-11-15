@@ -98,3 +98,21 @@ myRealRealAge = '27';
 //check type
 let finalValue: string = '30';
 console.log(typeof finalValue === 'string');
+
+//never
+//never return something
+function neverReturns(): never {
+    throw new Error('An error!');
+}
+
+//nullable
+let canBeNull: number | null = 12;
+canBeNull = null;
+let canAlsoBeNull;
+canAlsoBeNull = null;
+canAlsoBeNull = 45;
+let canThisBeAny: null | any;
+canThisBeAny = 12;
+
+let bindMultiply = multiply.bind(null, 10);
+console.log(bindMultiply(20));
