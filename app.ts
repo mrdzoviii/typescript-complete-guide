@@ -71,3 +71,26 @@ let userData: { name: string; age: number } = {
     age: 27,
 };
 //userData = {};
+
+//complex object
+let complex: { data: number[]; output: (all: boolean) => number[] } = {
+    output: function(all: boolean): number[] {
+        return this.data;
+    },
+    data: [100, 3.99, 10],
+};
+
+//type alias
+
+type Complex = { data: number[]; output: (all: boolean) => number[] };
+let complex2: Complex = {
+    output: function(all: boolean): number[] {
+        return this.data;
+    },
+    data: [100, 3.99, 10],
+};
+
+//union types
+let myRealRealAge: number | string = 27;
+myRealRealAge = '27';
+//myRealRealAge= true;
