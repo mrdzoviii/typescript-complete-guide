@@ -94,3 +94,7 @@ let complex2: Complex = {
 let myRealRealAge: number | string = 27;
 myRealRealAge = '27';
 //myRealRealAge= true;
+
+//check type
+let finalValue: string = '30';
+console.log(typeof finalValue === 'string');
