@@ -53,5 +53,29 @@ class Plant {
 
 let plant = new Plant();
 console.log(plant.species);
-plant.species = 'ab';
-console.log(plant.species);
+//plant.species = 'ab';
+//console.log(plant.species);
+
+//Abstract
+abstract class Project {
+    projectName: string = 'Default';
+    budget: number;
+
+    abstract changeName(name: string): void;
+
+    calcBudget() {
+        return this.budget;
+    }
+}
+
+class ItProject extends Project {
+    changeName(name: string): void {
+        this.projectName = name;
+    }
+}
+
+//console.log(new Project());
+let newProject = new ItProject();
+console.log(newProject);
+newProject.changeName('It project');
+console.log(newProject);
