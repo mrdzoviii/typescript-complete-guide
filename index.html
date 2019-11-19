@@ -6,9 +6,20 @@
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
             name="viewport"
         />
+
         <meta content="ie=edge" http-equiv="X-UA-Compatible" />
         <title>Learning TypeScript</title>
-        <script src="app.js"></script>
+        <script src="../node_modules/systemjs/dist/system.js">
+            System.config({
+                baseURL: '/',
+                defaultJSExtensions: true
+            });
+        </script>
     </head>
-    <body></body>
+    <body>
+        <script>
+            System.import('./app.js');
+            console.log('hello');
+        </script>
+    </body>
 </html>

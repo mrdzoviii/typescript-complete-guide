@@ -1,7 +1,15 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.PI = 3.14;
-function calculateCircumference(diameter) {
-    return diameter * exports.PI;
-}
-exports.calculateCircumference = calculateCircumference;
+System.register([], function (exports_1, context_1) {
+    "use strict";
+    var PI;
+    var __moduleName = context_1 && context_1.id;
+    function calculateCircumference(diameter) {
+        return diameter * PI;
+    }
+    exports_1("calculateCircumference", calculateCircumference);
+    return {
+        setters: [],
+        execute: function () {
+            exports_1("PI", PI = 3.14);
+        }
+    };
+});

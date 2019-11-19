@@ -2,7 +2,7 @@
     "name": "typescript-complete-guide",
     "version": "1.0.0",
     "description": "TypeScript Complete Guide",
-    "main": "index.js",
+    "main": "app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "lite-server"
@@ -19,6 +19,7 @@
     "homepage": "https://github.com/mrdzoviii/typescript-complete-guide#readme",
     "dependencies": {
         "lite-server": "^2.5.4",
-        "systemjs": "^6.1.4"
+        "systemjs": "^6.1.4",
+        "systemjs-plugin-babel": "0.0.25"
     }
 }
