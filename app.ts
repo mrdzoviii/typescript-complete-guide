@@ -40,3 +40,32 @@ class Person implements NamedPerson {
 
 const myPerson = new Person('Jovan');
 greet(myPerson);
+
+//Function types
+
+interface DoubleValueFunc {
+    (number1: number, number2: number): number;
+}
+
+const myDoubleFunction: DoubleValueFunc = function(
+    number1: number,
+    number2: number
+) {
+    return (number1 + number2) * 2;
+};
+console.log(myDoubleFunction(2, 10));
+
+//Interface inheritance
+
+interface AgedPerson extends NamedPerson {
+    age: number;
+}
+
+const oldPerson: AgedPerson = {
+    age: 25,
+    name: 'Max',
+    greet(lastName: string): void {
+        console.log(lastName);
+    },
+};
+console.log(oldPerson);
